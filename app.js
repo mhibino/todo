@@ -3,7 +3,7 @@ $(document).ready(function() {
   $("#todoForm").submit(function(e) {
     e.preventDefault();
     var newItem = $("#input").val();
-    $("#tasks").append("<li class='listitem'><span class='fa fa-fw fa-times delete'></span>" + newItem + "</li>")
+    $("#tasks").append("<li class='listitem'>" + newItem + "<span class='fa fa-fw fa-times delete pull-right'></span></li>")
     $("#input").val('');
   });
 
